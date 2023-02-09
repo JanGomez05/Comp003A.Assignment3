@@ -17,30 +17,38 @@ class Program
         double score = Convert.ToDouble(numericGrade);
         // the above coding lines is stringinga nd turing into a double
         // allowing decimals for precision accuracy
-        if (score >= 90)
+
+        if (numericGrade >= 0 && numericGrade <= 100)
         {
-            // any input from 90 and above is an A
-            Console.WriteLine("Letter Grade: A.");
-        }
-        else if (score >= 80)
-        {
-            // any input from 80-89 is a B
-            Console.WriteLine("Letter Grade: B.");
-        }
-        else if (score >= 70)
-        {
-            // any input from 70-79 is a C
-            Console.WriteLine("Letter Grade: C.");
-        }
-        else if (score >= 60)
-        {
-            // any input from 60-69 is a D
-            Console.WriteLine("Letter Grade: D.");
+            if (score >= 90)
+            {
+                // any input from 90 and above is an A
+                Console.WriteLine("Letter Grade: A.");
+            }
+            else if (score >= 80)
+            {
+                // any input from 80-89 is a B
+                Console.WriteLine("Letter Grade: B.");
+            }
+            else if (score >= 70)
+            {
+                // any input from 70-79 is a C
+                Console.WriteLine("Letter Grade: C.");
+            }
+            else if (score >= 60)
+            {
+                // any input from 60-69 is a D
+                Console.WriteLine("Letter Grade: D.");
+            }
+            else
+            {
+                // any input fom 59-0 is an F
+                Console.WriteLine("Letter Grade: F.");
+            }
         }
         else
         {
-            // any input fom 59-0 is an F
-            Console.WriteLine("Letter Grade: F.");
+            Console.WriteLine("invalid number!");
         }
         // if must end with an else statement
         Console.WriteLine("**********************");
