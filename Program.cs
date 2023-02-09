@@ -9,8 +9,7 @@ namespace Comp003A.Assignment3;
 class Program
 {
     static void Main(string[] args)
-    {
-
+    { 
         // creating a grading scale using if-else statements
         Console.WriteLine("Please choose a grade 0-100!");
         string numericGrade = Console.ReadLine();
@@ -18,7 +17,7 @@ class Program
         // the above coding lines is stringinga nd turing into a double
         // allowing decimals for precision accuracy
 
-        if (numericGrade >= 0 && numericGrade <= 100)
+        if (score >= 0 && score <= 100)
         {
             if (score >= 90)
             {
